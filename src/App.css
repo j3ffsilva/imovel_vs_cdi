@@ -57,7 +57,9 @@
   padding: 22px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: var(--surface);
+  background:
+    linear-gradient(180deg, rgba(211, 170, 70, 0.08), rgba(211, 170, 70, 0)),
+    var(--surface);
   box-shadow: var(--shadow);
 }
 
@@ -97,7 +99,9 @@
 .metric {
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: var(--surface);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.025), rgba(255, 255, 255, 0)),
+    var(--surface);
   box-shadow: var(--shadow);
 }
 
@@ -164,7 +168,8 @@
   height: 6px;
   border-radius: 999px;
   background:
-    linear-gradient(90deg, var(--accent) 0 var(--progress), #d6dbe4 var(--progress) 100%);
+    linear-gradient(90deg, var(--accent) 0 var(--progress), #202a35 var(--progress) 100%);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 }
 
 .slider input {
@@ -181,7 +186,7 @@
   min-height: 40px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: #fff;
+  background: #0c1117;
   color: var(--text);
   font: inherit;
   font-weight: 700;
@@ -191,12 +196,16 @@
 .advanced-toggle {
   width: 100%;
   margin-top: 18px;
+  color: var(--accent-strong);
+  border-color: rgba(211, 170, 70, 0.35);
+  background: rgba(211, 170, 70, 0.08);
 }
 
 .advanced-toggle:hover,
 .tabs button:hover {
   border-color: var(--accent);
-  color: var(--accent);
+  color: var(--accent-strong);
+  background: rgba(211, 170, 70, 0.1);
 }
 
 .advanced-panel {
@@ -346,7 +355,8 @@
 .tabs button.is-active {
   border-color: var(--accent);
   background: var(--accent);
-  color: #fff;
+  color: #12100a;
+  box-shadow: 0 0 18px rgba(211, 170, 70, 0.18);
 }
 
 .readable {
@@ -367,6 +377,7 @@
   border-radius: 8px;
   background: var(--surface-soft);
   padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
 }
 
 .explain-grid strong {
@@ -400,7 +411,8 @@
   padding: 16px;
   border: 0;
   border-radius: 8px;
-  background: var(--surface-soft);
+  background: rgba(211, 170, 70, 0.08);
+  border: 1px solid rgba(211, 170, 70, 0.22);
 }
 
 .note {
